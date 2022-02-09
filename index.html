@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TailwindCSS UNPAS</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        spacing: {
+                            13: "3.5rem",
+                        },
+                        fontFamily: {
+                            Fira: "Fira Code",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style type="text/tailwindcss">
+            /* * {
+                border: 1px solid blue;
+            } */
+        </style>
+    </head>
+    <body>
+        <h1
+            class="text-9xl text-center bg-gradient-to-r from-red-500 via-purple-500 to-yellow-500 bg-clip-text text-transparent"
+        >
+            Halo ion
+        </h1>
+        <section class="mb-10 bg-gradient-to-tr from-yellow-500 to-blue-500">
+            <h2 class="text-center text-lg text-white">Spacing</h2>
+            <div class="m-13">Margin</div>
+            <div class="p-10">Padding</div>
+        </section>
+
+        <section class="mb-10 w-1/2 bg-rose-600">
+            <h2 class="text-center text-white text-lg">Sizing</h2>
+            <div class="w-1/2">Box 1</div>
+        </section>
+
+        <section
+            class="font-Fira hover:font-serif max-w-3xl m-auto bg-gradient-to-b from-blue-600 via-red-500 to-purple-500"
+        >
+            <h2 class="mb- text-4xl">Ruth Ajalah</h2>
+            <div class="mb-4 text-sm">Ibtelligent Of Natural</div>
+            <p class="mb-4">
+                Lorem ipsum dolor sit amet
+                <a href="" class="underline font-semibold text-blue-600"
+                    >consectetur</a
+                >
+                adipisicing elit. Architecto a quam autem assumenda, molestiae
+                soluta officiis et eligendi fugit sit quidem libero repudiandae
+                delectus similique! Perspiciatis optio nulla amet quia esse
+                harum cupiditate est earum aspernatur aperiam, delectus aut
+                deleniti tempore nam iure consequuntur commodi facilis
+                doloremque modi vero eaque.
+            </p>
+            <blockquote class="mb-4 italic text-xl font-thin">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                veritatis?"
+            </blockquote>
+        </section>
+
+        <div
+            class="max-w-xl h-96 overflow-y-scroll bg-fixed bg-[#bada55] mx-auto mt-[42px]"
+            style="
+                background-image: url('https://source.unsplash.com/random/1000x600?apple');
+            "
+        >
+            <p class="p-5 text-2xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                commodi error est, rem consequuntur deleniti sequi dolores
+                beatae reprehenderit officia maxime repellendus at explicabo
+                quidem nesciunt quisquam possimus incidunt, nihil repellat
+                architecto eius officiis ratione nostrum. Inventore unde animi
+                perferendis quas consequuntur dolorum fuga. Quos doloremque quod
+                animi dicta consequatur, et beatae hic, vel iste tempore,
+                repudiandae vitae laboriosam eligendi cum laborum dolor porro.
+                Quis perferendis tenetur sequi quidem adipisci, animi at! Error
+                voluptas minus, cupiditate velit excepturi consectetur, pariatur
+                vel soluta ea alias quas atque dicta earum ex aliquam unde amet
+                dolorem neque non rerum suscipit sint. Repudiandae esse nulla
+                expedita illo iure saepe, ratione tempora iste dicta architecto
+                aperiam, ipsam inventore nesciunt. Repellendus tenetur ex
+                temporibus recusandae blanditiis illum sit enim, veniam
+                doloremque ratione perferendis officia ad maiores neque iure,
+                consequuntur quasi provident minus voluptates, incidunt ut.
+                Quaerat nihil quis illum iste debitis ex aspernatur cumque odio
+                corporis. Error eveniet dolorum amet, incidunt a temporibus
+                beatae recusandae ad ipsa molestias ea nostrum, quam magnam odit
+                commodi accusantium, voluptates est tempora? Nostrum repudiandae
+                eius doloremque, quibusdam hic laboriosam quis quidem,
+                temporibus perspiciatis neque iure perferendis vitae cumque
+                obcaecati culpa. In, temporibus atque. Minima, odit magni.
+                Perferendis voluptatum culpa iste?
+            </p>
+        </div>
+
+        <div
+            class="mt-32 max-w-xl mx-auto h-96 bg-teal-300 overflow-hidden border-8 bg-contain bg-no-repeat bg-center rounded-2xl shadow-2xl shadow-slate-500 bg-blend-multiply flex"
+            style="background-image: url('img/1.jpg')"
+        >
+            <div
+                class="w-[200px] h-[200px] bg-white/50 m-auto backdrop-blur-lg rounded-full"
+            ></div>
+        </div>
+
+        <hr class="my-20" />
+
+        <button
+            class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-inter mx-auto block hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-700"
+        >
+            Simpan
+        </button>
+
+        <div
+            class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group font-serif"
+        >
+            <h5
+                class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white"
+            >
+                My Card (lanjut video menit 12:50)
+            </h5>
+            <p
+                class="text-slate-600 group-hover:text-white selection:bg-green-500 selection:text-black first-line:uppercase first-line:tracking-wider first-letter:text-7xl first-letter:float-left first-letter:mr-3"
+            >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                distinctio quo ipsum repellat quaerat voluptates sit quam eum
+                sapiente explicabo molestias officiis esse est corrupti soluta
+                debitis aperiam delectus ex quae vitae non dignissimos, nulla
+                similique! Doloremque, dignissimos quasi.
+            </p>
+        </div>
+
+        <div class="mb-96"></div>
+    </body>
+</html>
